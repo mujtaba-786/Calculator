@@ -65,8 +65,8 @@
             text:'.'
             on_press: entry.text+=self.text
         CustButton:
-            text:'math.ceil'
-            on_press: entry.text+=self.text
+            text:'/'
+            on_press: entry.text=entry.text[0:len(str(entry.text))-1]
         CustButton:
             text:'('
             on_press: entry.text+=self.text
